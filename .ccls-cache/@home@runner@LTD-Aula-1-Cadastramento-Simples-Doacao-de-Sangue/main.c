@@ -1,37 +1,31 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 int main(void) {
+  
   char nome[50];
 	int idade;
 	float peso;
 	char genero;
 	
-	printf("Bem-vindo(a)! Preencham seus dados abaixo: \n \n");
+	printf("Bem-vindo(a)! Preencha seus dados abaixo: \n");
 	
 	printf("Digite seu nome: \n");
 	scanf("%[^\n]s",nome);
-	printf("\n");
 	
 	printf("Digite sua idade: \n");
 	scanf("%d", &idade);
-	printf("\n");
 	
 	printf("Digite seu peso: \n");
 	scanf("%f", &peso);
-	printf("\n");
 	
 	fflush(stdin);
 	printf("Digite seu gênero (M ou F): \n");
 	scanf("%s", &genero);
-	printf("\n");
 	
 	printf("CADASTRO REALIZADO COM SUCESSO! \n");
-	printf("\n");
 	
 	printf("Oi %s! Voce tem %d anos e pesa %.1f \n", nome, idade, peso);
 
-  printf("\n");
   printf("Nome: %s \n", nome);
 	printf("Idade: %d \n", idade);
 	printf("Peso: %.1f \n", peso);
